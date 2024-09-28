@@ -13,12 +13,12 @@ You can easily access the Developer Console on [myapology.co.uk](https://myapolo
 
    ```javascript
    // ==UserScript==
-   // @name         Open Dev Console
+   // @name         Don't Mess with My Dev Tools
    // @namespace    http://tampermonkey.net/
    // @version      1.0
-   // @description  Allow opening the Developer Console on restricted sites
-   // @author       Your Name
-   // @match        *://*/*  // You can restrict this to specific sites if needed
+   // @description  Press 'Ctrl + Shift + C' to open the Developer Console on restricted sites like https://myapology.co.uk/
+   // @author       Omed Qarshi
+   // @match        *://*/*
    // @grant        none
    // ==/UserScript==
 
@@ -37,3 +37,4 @@ You can easily access the Developer Console on [myapology.co.uk](https://myapolo
            }
        });
    })();
+
