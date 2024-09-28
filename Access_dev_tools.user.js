@@ -2,7 +2,7 @@
 // @name         Don't mess with my dev tools
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  To use press 'Ctrl + Shift + C + V' allow opening the Developer Console on restricted sites like https://myapology.co.uk/
+// @description  To use press 'Ctrl + Shift + C' allow opening the Developer Console on restricted sites like https://myapology.co.uk/
 // @author       Omed Qarshi
 // @match        *://*/*
 // @grant        none
@@ -14,7 +14,7 @@
     // Listen for keydown event
     document.addEventListener('keydown', function(e) {
         // Check for Ctrl + Shift + C + V
-        if (e.ctrlKey && e.shiftKey && e.key === 'C' && e.key === 'V') {
+        if (e.ctrlKey && e.shiftKey && e.key === 'C') {
             // Prevent default action
             e.preventDefault();
             // Open the console
